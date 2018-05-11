@@ -1,10 +1,10 @@
 {
-  "name": "gulphelpers",
-  "version": "1.0.0",
+  "name": "th-gulphelpers",
+  "version": "1.0.1",
   "description": "providing typescript types and helper for file.contents type not supported.",
   "main": "gulpHelpers.js",
   "types": "gulpHelpers.d.ts",
-  "files":["gulpHelpers.ts","gulpHelpers.js"],
+  "files":["gulpHelpers.d.ts","gulpHelpers.js"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
