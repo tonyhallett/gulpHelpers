@@ -1,5 +1,5 @@
 import {cbErrorIfContentsTypeNotSupported,PluginError} from '../gulpHelpers';
-import {createBufferFile,createStreamFile} from '../../gulpPluginTestHelpers'
+import {createBufferFile,createStreamFile} from 'gulpPluginTestHelpers'
 describe('gulp helpers',()=>{
     describe('cbErrorIfContentsTypeNotSupported',()=>{
         describe('throws and calls the callback',()=>{

@@ -4,7 +4,10 @@
   "description": "providing typescript types and helper for file.contents type not supported.",
   "main": "gulpHelpers.js",
   "types": "gulpHelpers.d.ts",
-  "files":["gulpHelpers.d.ts","gulpHelpers.js"],
+  "files": [
+    "gulpHelpers.d.ts",
+    "gulpHelpers.js"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -33,6 +36,7 @@
   },
   "devDependencies": {
     "@types/jest": "^22.2.3",
+    "gulpplugintesthelpers": "^1.0.0",
     "jest": "^22.4.3",
     "ts-jest": "^22.4.6",
     "typescript": "^2.8.3"
