@@ -38,10 +38,12 @@ describe('gulp helpers',()=>{
                 expect(mockCallback).not.toHaveBeenCalled();
             })
         })
-        describe('optional parameters just for coverage',()=>{
-            it('is annoying to do this',()=>{
-                const mockCallback=jest.fn();
-                cbErrorIfContentsTypeNotSupported("",createBufferFile(""),mockCallback);
+        describe('optional parameters',()=>{
+            it('buffer is supported',()=>{
+                expect(cbErrorIfContentsTypeNotSupported("",createBufferFile(""),()=>{})).toBe(false);
+            })
+            it("stream is not supported",()=>{
+                expect(cbErrorIfContentsTypeNotSupported("",createStreamFile(""),()=>{})).toBe(true);
             })
         })
     })
