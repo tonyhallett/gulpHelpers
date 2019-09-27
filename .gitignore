@@ -1,3 +1,4 @@
 node_modules
 gulpHelpers.d.ts
 gulpHelpers.js
+coverage

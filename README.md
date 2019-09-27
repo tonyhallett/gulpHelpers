@@ -1,16 +1,15 @@
-import PluginError from 'plugin-error'
-import File = require('vinyl');
-import { TransformOptions } from 'stream'
-export {File,PluginError}
-export { Transform, TransformOptions } from "stream";
-export type GulpStream=NodeJS.ReadWriteStream;
-export type TransformCallback=(err?:any,data?:File)=>void;
+# What is it ?
 
-export type GulpPluginWithOptions<TOptions>=(options:TOptions)=>GulpStream
-export type GulpPluginWithOptionalOptions<TOptions>=(options?:TOptions)=>GulpStream
-export type GulpPluginWithOptionsAndTransformOptions<TOptions>=(options:TOptions,transformOptions?:TransformOptions)=>GulpStream
-export type GulpPluginWithoutOptions=()=>GulpStream
+Some typescript types for a Gulp plugin
+e.g
+```
+export type GulpStream=NodeJS.ReadWriteStream;
 export type GulpPluginWithTranformOptions=(transformOptions?:TransformOptions)=>GulpStream
+```
+
+and 
+
+```
 export class FileContentsTypeNotSupportedError extends Error{
     constructor(bufferNotSupported:boolean){
         super(`Only ${bufferNotSupported?"streams":"buffers"} supported for File.contents`);
@@ -28,3 +27,4 @@ export function cbErrorIfContentsTypeNotSupported(pluginName:string,file:File,cb
     }
     return threw;
 }
+```

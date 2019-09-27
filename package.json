@@ -1,6 +1,6 @@
 {
   "name": "th-gulphelpers",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "providing typescript types and helper for file.contents type not supported.",
   "main": "gulpHelpers.js",
   "types": "gulpHelpers.d.ts",
@@ -8,8 +8,11 @@
     "gulpHelpers.d.ts",
     "gulpHelpers.js"
   ],
+  "repository": "github:tonyhallett/gulpHelpers",
+  "homepage": "https://github.com/tonyhallett/gulpHelpers",
+  "bugs": "https://github.com/tonyhallett/gulpHelpers/issues",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
@@ -32,7 +35,8 @@
       "jsx",
       "json",
       "node"
-    ]
+    ],
+    "collectCoverage":true
   },
   "devDependencies": {
     "@types/jest": "^22.2.3",
